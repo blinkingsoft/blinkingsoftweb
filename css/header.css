@@ -1,0 +1,77 @@
+/* CSS for common selectors (HTML Tags) */
+main
+{
+    position: relative;
+    top: 120px;
+}
+/* CSS for common selectors (HTML Tags) */
+
+/* Override rules starts here */
+.fixed-top
+{
+    background-color: aliceblue !important;
+    z-index: 999;
+}
+.navbar a
+{
+    color:#2596be;
+    text-decoration: none;
+}
+.navbar a:hover
+{
+    color: #134b5f;
+}
+#collapsibleNavbar li
+{
+    font-size: 18px;
+    margin-left: 60px !important;
+    font-weight: 600 !important;
+}
+/* Override rules ends here */
+
+#company-logo
+{
+    width: 100px;
+}
+
+/** mobile media query started here**/
+@media only screen and (max-width: 600px) 
+{
+    main
+    {
+        position: relative;
+        top: 15px;
+    }
+    #company-logo
+    {
+        width: 60px;
+    }
+    #close-button
+    {
+        display: flex;
+        color: white;
+    }
+    #collapsibleNavbar
+    {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        background-color:#071e26;
+        height: 100%;
+        z-index: 1000;
+    }
+    #collapsibleNavbar li
+    {
+        font-weight: 600;
+        margin-left: 10px !important;
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px solid #92cbdf;
+    }
+    #collapsibleNavbar li:first-child
+    {
+        border-bottom: 0px;
+    }
+}
+/** mobile media query ends here**/
