@@ -1,0 +1,97 @@
+:root
+{
+    /* color declaration*/
+    --text-color: #0b2d39;
+    --main-background-color:  white;
+    --secondary-text-color: #66b6d2;
+
+    /* font declaration*/
+    --decorative-font : "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+/* CSS for common selectors starts here(HTML Tags) */
+body
+{
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+/* CSS for common selectors ends hereS(HTML Tags) */
+
+/* Override rules starts here */
+.jumbotron
+{
+    background-color: var(--main-background-color) !important;
+}
+/* Override rules ends here */
+
+.wide-btn
+{
+    background-color: var(--text-color);
+    color: var(--main-background-color);
+    margin-top: 16px;
+    padding: 12px 60px;   
+}
+.wide-btn:hover
+{
+    padding: 12px 80px;
+    font-size: 18px;
+    color: var(--main-background-color);
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.section-title
+{
+    font-family: var(--decorative-font);
+    font-size: 46px;
+    color: var(--text-color);
+    font-weight: 800;
+}
+.catch-phrase-description
+{
+    font-size: 20px;
+    font-family: var(--decorative-font);
+    color: var(--secondary-text-color);
+}
+.section-description
+{
+    font-size: 15px;
+    font-family: var(--decorative-font);
+    color: var(--secondary-text-color);
+}
+.f-13
+{
+    font-size: 14px;
+}
+.service-card-img-container
+{
+    width: 135px;
+    height: 135px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #EEE;
+}
+.service-card-img-container img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+.service-card
+{
+    margin: 5px;
+}
+.service-card:hover
+{
+    background-color: #fafafa;
+    margin: 0px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.enquiry-form-container
+{
+    width: 400px !important;
+}
