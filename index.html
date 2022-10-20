@@ -53,6 +53,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
 </head>
 
@@ -65,7 +66,9 @@
                 <!-- Brand logo start here -->
                 <img src="img/company-logo.png" alt="Blinking Soft" id="company-logo" width="80">
                 <!-- Brand logo end here -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                onclick="toggleNavBar();">
+                    <!-- data-target="#collapsibleNavbar" -->
                     <span class="navbar-toggler-icon" id="toggle-bar">
                         <i class="fa fa-list" aria-hidden="trueS"></i>
                     </span>
@@ -74,19 +77,25 @@
                     <!-- menu start here-->
                     <ul class="navbar-nav">
                         <li class="nav-item d-md-none">
-                            <i class="fa fa-close fa-2x" id="close-button" aria-hidden="false"></i>
+                            <i class="fa fa-close fa-2x" id="close-button"
+                            onclick="toggleNavBar()" aria-hidden="false"></i>
                         </li>
                         <li class="nav-item ml-5 font-weight-bold">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item ml-5 font-weight-bold">
-                            <a class="nav-link" href="#services-section">Services</a>
+                            <a class="nav-link scroll-nav" href="javascript:void(0);"
+                            data-href="services-section">
+                                Services
+                            </a>
                         </li>
                         <li class="nav-item ml-5 font-weight-bold">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link scroll-nav" href="javascript:void(0);"
+                            data-href="about-us-section">About</a>
                         </li>
                         <li class="nav-item ml-5 font-weight-bold">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link scroll-nav" href="javascript:void(0);"
+                            data-href="contact-us-section">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -101,13 +110,15 @@
         <section id="welcome-section">
             <div class="container jumbotron text-center">
                 <h2 class="section-title">
-                    Our software comes from heaven
+                    Your preferences is our priority
                 </h2>
                 <p class="pt-2 catch-phrase-description">
-                 You have a disruptive idea? We have <br/>
-                a technology team who will build it and scale it.
+                 You have a lot of dreams in mind.<br/>
+                 We have a team who will make it possible.
                 </p>
-                <a href="contact-us" class="btn btn-lg wide-btn">
+                <a class="btn btn-lg wide-btn scroll-nav"
+                href="javascript:void(0);"
+                data-href="contact-us-section">
                     Get in touch 
                      <i class="fa fa-arrow-right" aria-hidden="true"></i>
                  </a>
@@ -121,8 +132,7 @@
                     Services
                 </h2>
                 <p class="pt-1 section-description">
-                    We start work from prototyping to end product delivery
-                    and scaling to next millions users
+                    Design, Develop, Deploy - Say no compromisation in your quality
                 </p>
                 <div class="row">
                     <div class="col-md-6 mt-2">
@@ -130,14 +140,15 @@
                             <div class="card-body d-flex">
                                 <div class="d-flex">
                                     <div class="service-card-img-container img-thumbnail p-4">
-                                        <img src="img/order.png">
+                                        <img src="img/caduceus.png" class="w-100">
                                     </div>
                                 </div>
                                 <div class="text-left px-4">
-                                    <h5>Product Development</h5>
+                                    <h5>Healthcare Systems</h5>
                                     <p class="card-text f-13">
-                                        We convert your digital product idea into reality.
-                                            We understand your idea, prototype it and do the development.</p>
+                                        We are customizing OpenEMR projects for your easy and efficient usage.
+                                        We will optimized the data and present in blink speed.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +190,7 @@
                             <div class="card-body d-flex">
                                 <div class="d-flex">
                                     <div class="service-card-img-container img-thumbnail p-4">
-                                        <img src="img/caduceus.png" class="w-100">
+                                        <img src="img/order.png">
                                     </div>
                                 </div>
                                 <div class="text-left px-4">
@@ -200,9 +211,20 @@
                         <h2 class="section-title">
                             About Us
                         </h2>
-                        <p>Digiqt Technolabs is a passion turned into a company. We are a trusted product development company that specializes in turning your ideas into digital solutions utilizing our years of experience in industry-leading technologies.
-                            We deliver high-tech innovations and great solutions for our clients in the most efficient manner regardless of the project complexity.
-                            We are trusted, quality-driven and value-driven product development company.</p>
+                        <p>Blinking soft build on 2020 from India to provide the best service at best price.
+                            We prenominated working on OpenEMR projects as well as IT solutions worldwide.
+                            Delivery the product with quality at reasonable timeline along futuristic vision.
+                        </p>
+                        <p>
+                            We give the solutions like UI/UX designs, Mobile applications,
+                            Application to Application migration, Database to Database migration,
+                            WordPress Applications, API development for external applications, 
+                            Integration APIs.
+                        </p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <img src="img/about-banner.png" alt="About Us Graph"
+                        id="about-us-banner">
                     </div>
                 </div>
             </div>
@@ -280,5 +302,20 @@
     <!-- Footer section ends here -->
 
 </body>
-
+<script>
+    $(document).ready(function(){
+        $(".scroll-nav").click(function(){
+            var posDiv = $(this).data("href");
+            var scrollTopPos = Number($('#'+posDiv).offset().top)-100;
+            $("html, body").animate({
+                scrollTop: scrollTopPos
+            }, 1000);
+            $("#collapsibleNavbar").removeClass("nav-w-80");
+        })
+    });
+    function toggleNavBar()
+    {
+        $("#collapsibleNavbar").toggleClass("nav-w-80");
+    }
+</script>
 </html>

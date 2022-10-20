@@ -3,6 +3,7 @@
     /* color declaration*/
     --text-color: #0b2d39;
     --main-background-color:  white;
+    --even-section-background-color: #fafafa;
     --secondary-text-color: #66b6d2;
 
     /* font declaration*/
@@ -14,15 +15,31 @@ body
     background-color: var(--main-background-color);
     color: var(--text-color);
 }
+section:nth-child(even)
+{
+    background-color: var(--even-section-background-color) !important;
+}
+section:last-child .jumbotron
+{
+    margin-bottom: 0px !important;
+}
 /* CSS for common selectors ends hereS(HTML Tags) */
 
 /* Override rules starts here */
+section:nth-child(even) .jumbotron
+{
+    background-color: var(--even-section-background-color) !important;
+}
 .jumbotron
 {
     background-color: var(--main-background-color) !important;
 }
 /* Override rules ends here */
 
+#about-us-banner
+{
+    height: 300px;
+}
 .wide-btn
 {
     background-color: var(--text-color);
