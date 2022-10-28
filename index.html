@@ -7,23 +7,7 @@
     </title>
 
     <!-- favicon starts here-->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <!-- favicon END here-->
 
     <meta charset="utf-8">
@@ -64,7 +48,8 @@
         <nav class="navbar navbar-expand-sm fixed-top bg-white">
             <div class="container">
                 <!-- Brand logo start here -->
-                <img src="img/company-logo.png" alt="Blinking Soft" id="company-logo" width="80">
+                <img src="img/blinking-soft.svg" alt="Blinking Soft"
+                id="company-logo" class="m-1 p-3">
                 <!-- Brand logo end here -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                 onclick="toggleNavBar();">
@@ -273,27 +258,30 @@
     <!-- Footer section starts here -->
     <footer>
         <div class="container-fluid">
-            <div class="m-3">
+            <div class="">
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="img/company-logo.png" alt="Blinking Soft"
-                        width="150">
+                    <div class="col-md-4 p-5">
+                        <img src="img/blinking-soft-white.svg" alt="Blinking Soft">
                     </div>
-                    <div class="col-md-4">
-                        <i class="fa fa-map-marker fa-2x" aria-hidden="false"></i>
-                        <address>
-                            F1, Nithin Nivas Apartment,<br/>
-                            Jeyasimmapuram,<br>
-                            Pappanaicken Palayam,<br>
-                            Coimbatore - 641 037.
-                        </address>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="mapouter">
-                            <div class="gmap_canvas float-right">
-                                <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                                    src="https://maps.google.com/maps?width=300&amp;height=400&amp;hl=en&amp;q=nano zone&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+                    <div class="col-md-4 p-5">
+                        <div class="w-100 d-flex justify-content-center">
+                            <div>
+                                <i class="fa fa-map-marker fa-2x" aria-hidden="false"></i>
+                                <address>
+                                    F1, Nithin Nivas Apartment,<br/>
+                                    Jeyasimmapuram,<br>
+                                    Pappanaicken Palayam,<br>
+                                    Coimbatore - 641 037.
+                                </address>    
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe class="gmap_iframe" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        width="100%" height="250"
+                        src="https://maps.google.com/maps?width=300&amp;height=400&amp;hl=en&amp;q=nano zone&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe>
                     </div>
                 </div>
             </div>
