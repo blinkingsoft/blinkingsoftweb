@@ -45,12 +45,11 @@ section:nth-child(even) .jumbotron
     background-color: var(--text-color);
     color: var(--main-background-color);
     margin-top: 16px;
-    padding: 12px 60px;   
+    padding: 12px 60px;  
 }
 .wide-btn:hover
 {
     padding: 12px 80px;
-    font-size: 18px;
     color: var(--main-background-color);
     -webkit-transition: all .6s ease;
     -moz-transition: all .6s ease;
