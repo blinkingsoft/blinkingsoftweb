@@ -467,7 +467,13 @@ nav{
 .primary-btn:hover{
     padding: 0.5rem 2.5rem;
 }
-
+.our-partners-grid>img{
+padding: 0.5rem 1rem;
+transition:0.2s;
+}
+.our-partners-grid>img:hover{
+    padding:0.5rem 2rem ;
+}
 .services-cards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
