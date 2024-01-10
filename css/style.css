@@ -469,7 +469,7 @@ nav{
 }
 .our-partners-grid>img{
 padding: 0.5rem 1rem;
-transition:0.2s;
+transition:0.3s;
 }
 .our-partners-grid>img:hover{
     padding:0.5rem 2rem ;
@@ -571,6 +571,10 @@ transition:0.2s;
     aspect-ratio: 3/2;
     object-fit: contain;
     mix-blend-mode: color-burn;
+}
+.technology-list-grid img:hover{
+    padding: 1.5rem;
+    transition: 0.4s;
 }
 
 .tech-list-section{
