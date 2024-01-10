@@ -519,20 +519,23 @@ transition:0.3s;
 .about-content{
     padding-left: 40px;
 }
-
+.about-content h2{
+    padding-bottom: 15px;
+}
 .about-content p{
     /* margin-top: 2rem; */
     text-align: left;
     font-size: 16px;
-    width: 75%;
+    width: 85%;
 }
 .about-content h3{
     margin-top: 20px;
 }
 .about-img-1{
-    width: 250px;
+    width: 300px;
     padding: 3rem;
-    margin-right: 50px;
+    margin-right: 60px;
+    margin-top: 40px;
 }
 .about-img-2{
     width: 250px;
