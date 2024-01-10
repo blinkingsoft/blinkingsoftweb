@@ -723,8 +723,24 @@ footer li{
         grid-template-columns: repeat(1, 1fr);
     }
     .about-grid{
+        display: block;
+        gap: 0rem;
+        margin-top: 0rem;
+        padding: 1rem 0rem;
+    }
+    .metrics-title{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .about-metrics-grid{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.25rem;
+        margin-top: 2rem;
+    }
+    .metrics-description{
+        display: block;
+        width: 50%;
     }
     .top-menu{
         display: none;
@@ -733,10 +749,13 @@ footer li{
         width: 70px;
     }
     .about-content{
-        margin: 2rem;
+        margin: 0rem;
+    }
+    .about-banner-container{
+        display: none;
     }
     .about-banner{
-        width: 250px;
+        width: 150px;
     }
     .footer-grid{
         grid-template-columns: repeat(2, 1fr);
