@@ -372,7 +372,7 @@ nav{
     position: absolute;
     top: 0;
     right: 0;
-    box-shadow: 0 0 1000px 50px var(--secondary-color);
+    box-shadow: 0 0 1000px 60px var(--secondary-color);
     z-index: -1;
 }
 
@@ -396,7 +396,7 @@ nav{
     position: absolute;
     bottom: 0;
     left: 0;
-    box-shadow: 0 0 1000px 50px var(--secondary-color);
+    box-shadow: 0 0 1000px 60px var(--secondary-color);
     z-index: -1;
 }
 
@@ -573,8 +573,8 @@ transition:0.3s;
     mix-blend-mode: color-burn;
 }
 .technology-list-grid img:hover{
-    padding: 1.5rem;
-    transition: 0.4s;
+    padding: 0.5rem;
+    transition: 0.2s;
 }
 
 .tech-list-section{
@@ -587,7 +587,7 @@ transition:0.3s;
 
 .tech-card{
     border: 1px solid var(--gray-color);
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .tech-card:not(.active) .tech-details{
@@ -609,12 +609,12 @@ transition:0.3s;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 2rem;
-    margin: 2rem;
+    margin: 4rem;
 }
 
 #industry-section{
     background-color: var(--secondary-color);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .white-background{
