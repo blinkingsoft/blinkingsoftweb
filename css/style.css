@@ -467,13 +467,6 @@ nav{
 .primary-btn:hover{
     padding: 0.5rem 2.5rem;
 }
-.our-partners-grid>img{
-padding: 0.5rem 1rem;
-transition:0.3s;
-}
-.our-partners-grid>img:hover{
-    padding:0.5rem 2rem ;
-}
 .services-cards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -555,12 +548,16 @@ transition:0.3s;
 }
 
 .our-partners-grid img{
-    width: 10%;
+    width: 15%;
+    padding: 0.5rem 1rem;
     aspect-ratio: 3/2;
     object-fit: contain;
     mix-blend-mode: color-burn;
+    transition: 0.3s;
 }
-
+.our-partners-grid img:hover{
+    padding: 0rem;
+}
 
 .technology-list-grid{
     display: flex;
@@ -591,6 +588,7 @@ transition:0.3s;
 .tech-card{
     border: 1px solid var(--gray-color);
     padding: 1.5rem;
+    cursor: pointer;
 }
 
 .tech-card:not(.active) .tech-details{
@@ -726,8 +724,24 @@ footer li{
         grid-template-columns: repeat(1, 1fr);
     }
     .about-grid{
+        display: block;
+        gap: 0rem;
+        margin-top: 0rem;
+        padding: 1rem 0rem;
+    }
+    .metrics-title{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .about-metrics-grid{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.25rem;
+        margin-top: 2rem;
+    }
+    .metrics-description{
+        display: block;
+        width: 50%;
     }
     .top-menu{
         display: none;
@@ -736,10 +750,13 @@ footer li{
         width: 70px;
     }
     .about-content{
-        margin: 2rem;
+        margin: 0rem;
+    }
+    .about-banner-container{
+        display: none;
     }
     .about-banner{
-        width: 250px;
+        width: 150px;
     }
     .footer-grid{
         grid-template-columns: repeat(2, 1fr);
