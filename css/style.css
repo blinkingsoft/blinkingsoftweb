@@ -588,6 +588,7 @@ nav{
 .tech-card{
     border: 1px solid var(--gray-color);
     padding: 1.5rem;
+    cursor: pointer;
 }
 
 .tech-card:not(.active) .tech-details{

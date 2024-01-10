@@ -391,18 +391,10 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-    var tech_card_length;
-    var current_tech_card = 1;
-    $(document).ready(function(){
-        tech_card_length = $(".tech-card").length;
-    });
-    setInterval(function(){
-        current_tech_card++;
-        if(current_tech_card>tech_card_length)
-            current_tech_card=1;
+    $(".tech-card").click(function(){
         $(".tech-card").removeClass("active");
-        $(".tech-card:nth-child("+current_tech_card+")").addClass("active");
-    }, 2500);
+        $(this).addClass("active");
+    });
 </script>
 </body>
 </html>
