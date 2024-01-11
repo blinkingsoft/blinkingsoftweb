@@ -78,6 +78,11 @@ nav{
     border-radius: 10px;
 }
 
+.testimonial-content{
+    padding: 4rem;
+    padding-top: 1rem;
+}
+
 .testimonial-slider{
     display: flex;
     gap: 2rem;
@@ -757,6 +762,19 @@ footer li{
     }
     .about-banner{
         width: 150px;
+    }
+    .testimonial-slider{
+        display: initial;
+    }
+    .testimonial-content-container{
+        padding: 0.5rem;
+    }
+    .testimonial-content{
+        padding: 1rem;
+        padding-top: 0.25rem;
+    }
+    #testimonial-quote{
+        width: 24px;
     }
     .footer-grid{
         grid-template-columns: repeat(2, 1fr);
