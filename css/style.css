@@ -776,6 +776,14 @@ footer li{
     #testimonial-quote{
         width: 24px;
     }
+    .our-partners-grid img{
+        width: 25%;
+        padding: 0.5rem 1rem;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+        transition: 0.3s;
+    }
     .footer-grid{
         grid-template-columns: repeat(2, 1fr);
     }
