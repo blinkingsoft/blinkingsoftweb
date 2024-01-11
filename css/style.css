@@ -784,6 +784,11 @@ footer li{
         mix-blend-mode: color-burn;
         transition: 0.3s;
     }
+    .tech-list-section{
+        display: block;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
     .footer-grid{
         grid-template-columns: repeat(2, 1fr);
     }
