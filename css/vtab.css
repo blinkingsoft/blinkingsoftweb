@@ -113,3 +113,19 @@ header {
 .tabs a:hover svg {
     stroke: var(--white);
 }
+
+@media (width < 600px) {
+    .tabs-container{
+        display:block;
+    }
+    .tabs a {
+        width: 50%;
+        float: left;
+        font-size: 12px;
+        padding: 5px;
+        background-color: var(--white);
+    }
+    .tabs {
+        display: inline-block;
+    }
+}
