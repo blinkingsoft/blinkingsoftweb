@@ -16,8 +16,8 @@
 </head>
 <body>
 
-    <div class="section-container">
-        <div class="about page-container about-grid">
+    <div>
+        <div class="about page-container">
             <div class="about-content">
                 <h1 class="section-title">Microsoft OAuth Receiver</h1>
                 <p>
@@ -26,10 +26,22 @@
                 <p>
                     Token will restored to the application within few seconds
                 </p>
+                <h2>Token</h2>
+                <p>
+                    <span id="access-token" style="overflow-wrap: break-word;"></span>
+                </p>
             </div>
         </div>
     </div>
     <script>
+        const url = (location.href)
+        const urlParams = url.split("#")
+        console.log(urlParams[1])
+        const accessToken = new URLSearchParams(urlParams[1]).get('access_token');
+        console.log(accessToken)
+        document.getElementById('access-token').innerHTML=accessToken;
+        window.opener.updateAccessToken(accessToken);
+        window.close();
     </script>
 </body>
 </html>
